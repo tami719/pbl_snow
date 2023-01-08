@@ -77,7 +77,7 @@ export const Header = () => {
       />
 
       <Button onClick={toggleColorMode} bg={color} className={Styles2.fuwafuwa}>
-        {colorMode === 'light' ? '🎄' : '🎅'}
+        {colorMode === 'light' ? '🎄' : '🎃'}
       </Button>
     </Box>
   );
