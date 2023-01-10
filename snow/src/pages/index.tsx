@@ -1,4 +1,5 @@
 import {App} from './snow'
+import Head from 'next/head';
 import { Box, Container } from "@chakra-ui/layout";
 import { Header } from "./header";
 import { TopWorks } from "./works";
@@ -13,9 +14,14 @@ import Styles2 from './css/motion.module.css';
 export default function Home(){
     const color = useColorModeValue("#006400", "#000")
     return(
+
         <>
         {App()}
         <Box className={Styles.cursor}  w={"100%"} bg={color} opacity="0.8" color="#ffffff">
+        <Head>
+        <title>kitasan&mila</title>
+        <link rel="icon" href="/favicon.ico"/>
+      </Head>
     <Box>
       <Header />
     </Box>
